@@ -1,19 +1,23 @@
-package behavioraldesignpatterns;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-import abstraction.subjectabs;
 
 public class Subject implements subjectabs {
-    String name="SHRIKANT PADHY";
+    private String name="SHRIKANT PADHY";
     List<Observer>Observerlist=new ArrayList<>();
+    
+    
+    public List<Observer> getObserverList(){
+        return(Observerlist);
+    }
+
     @Override
     public void notifying() {
         for(Observer entity:Observerlist){
            entity.updates(this,"new content is posted");
         }
-        
     }
 
     @Override
@@ -41,6 +45,18 @@ public class Subject implements subjectabs {
             return false;
         Observerlist.remove(t1);
         return(true);
+    }
+    @Override
+    public void setName(String name) {
+        // TODO Auto-generated method stub
+        this.name=name;
+        
+    }
+
+    @Override
+    public String getName() {
+        // TODO Auto-generated method stub
+        return this.name;
     }
     
     

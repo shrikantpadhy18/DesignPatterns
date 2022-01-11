@@ -1,8 +1,13 @@
-package behavioraldesignpatterns;
-
-import abstraction.observerabs;
 
 public class Observer implements observerabs {
+    String nameofobserString;
+    public String getNameOfObserverString(){
+        return nameofobserString;
+    }
+
+    public void setNameOfObserverString(String nameofsString){
+        this.nameofobserString=nameofsString;
+    }
 
     @Override
     public void register(Subject ob) {
@@ -11,6 +16,7 @@ public class Observer implements observerabs {
 
         
     }
+
 
     @Override
     public void unregister(Subject ob) {
@@ -21,7 +27,7 @@ public class Observer implements observerabs {
     @Override
     public void updates(Subject ob,String mssg) {
         // TODO Auto-generated method stub
-        System.out.println("Channel "+ob.name+"has some update");
+        System.out.println("Channel "+ob.getName()+"has some update");
         
     }
     
