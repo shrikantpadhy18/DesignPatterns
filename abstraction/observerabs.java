@@ -1,11 +1,13 @@
 package abstraction;
 
+import behavioraldesignpatterns.Subject;
+
 public interface observerabs {
-    public void register(subjectabs ob);
+    public void register(Subject ob);
 
-    public void unregister(subjectabs ob);
+    public void unregister(Subject ob);
 
-    public void updates(subjectabs ob);
+    public void updates(Subject ob,String m);
 
 
 }
