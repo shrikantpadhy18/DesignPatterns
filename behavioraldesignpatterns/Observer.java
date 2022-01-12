@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Observer implements observerabs {
     String nameofobserString;
+    List<Subject>subjectlist=new ArrayList<>();
+
     public String getNameOfObserverString(){
         return nameofobserString;
     }
@@ -12,11 +16,18 @@ public class Observer implements observerabs {
     @Override
     public void register(Subject ob) {
         // TODO Auto-generated method stub
+        this.subjectlist.add(ob);
         ob.addObserver(this);
 
         
     }
 
+    public void getSubjectList(){
+        System.out.println("Total followeing "+this.getNameOfObserverString()+" has="+this.subjectlist.size());
+        for(Subject entity:subjectlist){
+            System.out.println(this.getNameOfObserverString()+"follows "+entity.getName());
+        }
+    }
 
     @Override
     public void unregister(Subject ob) {

@@ -6,5 +6,8 @@ public interface observerabs {
 
     public void updates(Subject ob,String m);
 
+    public void getSubjectList();
 
+    public String getNameOfObserverString();
+    public void setNameOfObserverString(String ob);
 }

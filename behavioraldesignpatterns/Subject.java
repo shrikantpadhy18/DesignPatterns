@@ -1,11 +1,9 @@
-
-
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Subject implements subjectabs {
-    private String name="SHRIKANT PADHY";
+    private String name;
     List<Observer>Observerlist=new ArrayList<>();
     
     
