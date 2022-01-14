@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Observer implements observerabs {
     String nameofobserString;
+    String role;
     List<Subject>subjectlist=new ArrayList<>();
 
     public String getNameOfObserverString(){
@@ -40,6 +41,19 @@ public class Observer implements observerabs {
         // TODO Auto-generated method stub
         System.out.println("Channel "+ob.getName()+"has some update");
         
+    }
+
+    @Override
+    public void setRoleOfObserverString(String role) {
+        // TODO Auto-generated method stub
+        this.role=role;
+        
+    }
+
+    @Override
+    public String getRoleOfObserveString() {
+        // TODO Auto-generated method stub
+        return this.role;
     }
     
 }

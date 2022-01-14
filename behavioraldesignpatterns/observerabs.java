@@ -10,4 +10,6 @@ public interface observerabs {
 
     public String getNameOfObserverString();
     public void setNameOfObserverString(String ob);
+    public void setRoleOfObserverString(String role);
+    public String getRoleOfObserveString();
 }
