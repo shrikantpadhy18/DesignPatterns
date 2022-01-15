@@ -29,6 +29,10 @@ public class File {
         //find out how many clubs SHRIKANT FOLLOWS
         ob1.getSubjectList();
 
+        //want to update the committee members regarding an event that gonna happen 
+        sub1.notifying("we are organising an event ---stay tuned");
+
+
         //if suppose SHRIKANT unfollows ITSA;
 
         ob1.unregister(sub1);
@@ -39,6 +43,7 @@ public class File {
         for(Observer data:sub1.getObserverList()){
             System.out.println("NAME="+data.getNameOfObserverString());
         }
+        
 
     }  
 }

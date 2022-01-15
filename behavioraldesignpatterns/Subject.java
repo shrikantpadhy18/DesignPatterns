@@ -12,9 +12,9 @@ public class Subject implements subjectabs {
     }
 
     @Override
-    public void notifying() {
+    public void notifying(String msg) {
         for(Observer entity:Observerlist){
-           entity.updates(this,"new content is posted");
+           entity.updates(this,msg);
         }
     }
 

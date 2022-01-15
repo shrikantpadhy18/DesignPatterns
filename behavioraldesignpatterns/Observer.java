@@ -40,6 +40,7 @@ public class Observer implements observerabs {
     public void updates(Subject ob,String mssg) {
         // TODO Auto-generated method stub
         System.out.println("Channel "+ob.getName()+"has some update");
+        System.out.println(this.getNameOfObserverString()+" recieves"+mssg);
         
     }
 
