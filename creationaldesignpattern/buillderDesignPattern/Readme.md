@@ -11,3 +11,6 @@ The architecture is
 
 builder designpattern.java will contain all the the steps needed before creating our object.
 there will be one director which knows what all methods of builder has to be called to get the final object ready.
+
+
+so we we would avoid creating complex constructors[ lots of complex objects as parameter]
